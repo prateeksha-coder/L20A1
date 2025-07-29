@@ -6,10 +6,15 @@
 </head>
 
 <body>
-    <h1>Functions Expression</h1>
+
+    <button onclick="myfunction(5)">Exceute JS Functions</button>
     <script>
-       var result = function (a, b) { return a * b };
-        document.write(result(5, 8));
+        function myfunction(x, y) {
+                if (y === undefined) {
+                    y = 2;
+                }
+                document.write(x * y);
+            }
     </script>
 </body>
 
